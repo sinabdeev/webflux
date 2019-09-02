@@ -18,6 +18,8 @@ public class MyController {
 
         }
 
+        System.out.println(Thread.currentThread().getName());
+
         return Mono.just("Lincoln");
     }
 
@@ -29,6 +31,8 @@ public class MyController {
         } catch (Exception e) {
 
         }
+
+        System.out.println(Thread.currentThread().getName());
 
         return "William";
     }
